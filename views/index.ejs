@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Duel Monsters</h1>
+
+    <ul>
+    <% for(let i = 0; i < monsters.length; i++) { %>
+      <li><a href="/<%=monsters[i].id %>"><%=monsters[i].monsterName %></a></li>
+    <% } %>
+    </ul>
+
+    <div>
+      <a href="/new">Create new Dual Monster</a>
+    </div>
+
+    <div>
+      <a href="/">Return to Home Page</a>
+    </div>
+
+  </body>
+</html>

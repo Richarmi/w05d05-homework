@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Name: <%=monsters.monsterName%></h1>
+    <h1>ATK: <%=monsters.attack%></h1>
+    <h1>DEF: <%=monsters.defense%></h1>
+
+    <div>
+      <a href="/<%=monsters.id%>/edit">Edit Duel Monster</a>
+    </div>
+    <div>
+      <form  action="/<%=monsters.id%>/delete?_method=DELETE" method="post">
+        <button>Delete This Duel Monster</button>
+      </form>
+    </div>
+
+    <a href="/"> Return to home page</a>
+
+  </body>
+</html>
